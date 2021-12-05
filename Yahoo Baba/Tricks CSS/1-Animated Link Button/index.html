@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animated Button</title>
+    <style>
+        .btn {
+            border: 1px solid #c0392b;
+            text-decoration: none;
+            color: #c0392b;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            /* This inline-block property is for all the text related tags like "span", "a" etc. It means these will work like a block element but will align horizontally */
+            position: relative;
+            /* If the parent element is relative and the child element is absolute, then the child's position will be depend on the parent */
+            transition: 0.5s;
+        }
+
+        .btn::after {
+            content: "";
+            background-color: #c0392b;
+            position: absolute;
+            /* This position feature will not work before giving two properties which are top / bottom and left / right */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            color: #fff;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="btn">Hover Me</a>
+</body>
+
+</html>

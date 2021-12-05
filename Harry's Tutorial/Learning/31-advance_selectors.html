@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>More Advance Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* If p is contained by any li which is contained by div */
+        div li p {
+            color: red;
+            background-color: blue;
+            font-weight: bold;
+        }
+
+        /* If p is right inside div then this css will be applied */
+        div > p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+
+        /* If p is right after div that is the next sibling of div */
+        div + p{
+            background-color: rgb(255, 122, 122);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is a paragraph inside li</p>
+                </li>
+                <li>This will not get affected. Because it is not a paragraph</li>
+                <p>This is a paragraph but it's not affected because it is inside ul and there are no properties of ul.</p>
+            </ul>
+            <p>This is the first paragraph</p>
+        </div>
+        <p>This is the second paragraph. It had to be like the first paragraph but it won't cause their also written <i> div + p </i> property after the <i> div > p </i> property. So it has got the both property.</p>
+    </div>
+    <p>This is the third paragraph</p>
+</body>
+
+</html>

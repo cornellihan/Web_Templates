@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #modal-toggle {
+            display: none;
+        }
+
+        .modal-close {
+            display: block;
+            font-weight: bold;
+            font-size: 50px;
+            cursor: pointer;
+            position: absolute;
+            transition: .2s;
+        }
+        
+        #modal-toggle:checked ~ .modal-close {
+            transform: rotate(90deg);
+        }
+    </style>
+<head>
+    <title>Demo</title>
+</head>
+<body>
+    <input type="checkbox" id="modal-toggle">
+    <label for="modal-toggle" class="modal-close">&#215;</label>
+</body>
+</html>

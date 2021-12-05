@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* border: solid; */
+            width: 500px;
+            overflow: hidden;
+            margin: auto;
+            position: relative;
+        }
+        
+        .container img {
+            width: 500px;
+            height: 500px;
+            transition: all 0.5s;
+        }
+
+        .container:hover img {
+            transform: rotateY(90deg);
+        }
+
+        .container .content {
+            font-size: 1.9rem;
+            font-family: arial;
+            padding: 10px 14px;
+            background: gray;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(90deg);
+            transition: all 0.5s;
+        }
+        
+        .container:hover .content {
+            transition-delay: 0.3s;
+            transform: rotateY(0deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic">
+            <img src="../1-Slid Show/image.jpg">
+        </div>
+        
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus facilis earum modi est nobis omnis ducimus sequi harum quidem voluptatum vitae, iusto minima non fugit corrupti ullam pariatur dolore quisquam eius consequatur sit qui. Neque voluptatem nobis illum mollitia id similique quo aspernatur! Magni quos rem laboriosam mollitia ducimus?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

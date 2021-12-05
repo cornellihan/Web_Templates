@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            height: 150px;
+            width: 150px;
+            background-color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+
+            /* Transition short hand property in one line */
+            /* transition: background-color 1s ease-in-out 2s; */
+            transition: all 1s ease-in-out .3s;
+
+        }
+        .container:hover{
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hey, let's hover the container bellow and see what happens...!!!</h2>
+    <div class="container">Just hover it :)</div>
+</body>
+</html>

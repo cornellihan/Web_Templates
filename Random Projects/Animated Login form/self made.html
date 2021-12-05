@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<head>
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: #eee;
+            padding: 80px 120px;
+            border: solid;
+        }
+
+        .box h1 {
+            padding-bottom: 100px;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .box label {
+            font-size: 1.6rem;
+        }
+
+        .username input,
+        .password input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .button input[type="submit"] {
+            font-size: 1.3rem;
+            padding: 10px 15px;
+            border: 2px solid;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .button input[type="submit"]:hover {
+            cursor: pointer;
+            color: #eee;
+            border: 2px solid rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Login Here</h1>
+            <form>
+                <div class="username">
+                    <label for="username">Username: </label>
+                    <input type="text" id="username">
+                </div>
+                <div class="password">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password">
+                </div>
+                <div class="button">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

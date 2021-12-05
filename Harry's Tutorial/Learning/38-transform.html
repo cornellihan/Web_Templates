@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            transition: all 5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:hover {
+            /* transform: rotate(1440deg);      This will make the element rotation*/
+            /* transform: skew(20deg);      This will just change the position and it's used to make something 3d*/
+            /* transform: scale(1.2); This will make the element zoom-in or zoom-out */
+            transform: rotate(3600deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Hover Me :)</h2>
+        </div>
+    </div>
+</body>
+
+</html>

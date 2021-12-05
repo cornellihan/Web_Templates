@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>Something</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .navigation {
+            font-size: 23px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 15px 20px;
+        }
+
+        section {
+            height: 450px;
+            justify-content: center;
+            align-items: center;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        header::after {
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            opacity: 0.35;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, animi quidem placeat quibusdam commodi
+            accusantium dolores ab. Consectetur mollitia quibusdam unde? Suscipit voluptatum soluta mollitia,
+            laudantium eum harum unde nobis?</p>
+    </section>
+    <hr>
+</body>
+
+</html>

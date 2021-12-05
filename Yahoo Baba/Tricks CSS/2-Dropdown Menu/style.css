@@ -1,0 +1,58 @@
+#menu > ul {
+    background: #2c3e50;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;         /* If the margin and padding is not given, then the text will be in center of the li */
+    float: left;
+}
+
+#menu ul li {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    font-family: arial;
+    font-weight: bold;
+    display: block;         /* Sometimes padding don't work properly to the text relted container. So if there display can be blocked, then it will work like a div and also there will no problem related to padding, width and more */
+}
+
+#menu ul ul {
+    background: #27ae60;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+}
+
+#menu ul ul li {
+    width: 180px;
+    float: none;
+    /* border-left: 3px solid #27ae60; */
+}
+
+#menu ul ul li:hover {
+    border-left: 3px solid #2c3e50;
+    box-sizing: border-box;         /* After using this property, the width won't grow, but the text will move 3px left */
+}
+
+#menu ul ul ul {
+    top: 0;
+    left: 100%;         /* If these property is not written, then the secondary drop-down menu will go one step down from it and will overlap to the next element */
+}
+
+#menu ul li:hover > ul {
+    display: block;
+}
+
+#menu ul li:hover {
+    background: #2ecc71;
+}

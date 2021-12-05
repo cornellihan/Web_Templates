@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    background-color: #7f8c8d;
+}
+
+.tab-wrap {
+    width: 60%;
+    list-style: none;
+    padding: 0;
+    margin: 50px;
+    position: relative;
+}
+
+.tab-wrap input[type="radio"] {
+    position: absolute;
+    top: -99px;
+    left: -99px;
+}
+
+.tab-wrap li {
+    float: left;
+    display: block;
+}
+
+.tab-wrap label {
+    background-color: #f39c12;
+    display: inline-block;
+    padding: 10px 65px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+}
+
+.tab-wrap .tab-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 5px 5px 5px;
+    position: absolute;
+    left: 0;
+    /* top: 50px;          If it is given, then there will be create a gap between contents and label. so then the label's height should be increase somehow */
+    width: 100%;
+    display: none;
+}
+
+.tab-wrap input[id^="tab"]:checked + label {
+    background-color: #fff;
+}
+
+.tab-wrap input[id^="tab"]:checked ~ .tab-content {
+    display: block;
+}

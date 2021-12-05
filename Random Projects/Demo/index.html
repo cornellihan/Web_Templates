@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Effect</title>
+    <style>
+        .container {
+            /* border: solid; */
+            width: 700px;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container input {
+            display: none;
+        }
+
+        .container img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, .7);
+            color: #fff;
+            font-family: arial;
+            text-align: center;
+            padding: 300px 20px;
+            position: absolute;
+            top: -120%;
+            left: 0;
+            height: 99%;
+            box-sizing: border-box;
+            transition: .5s;
+        }
+
+        .content h1 {
+            font-size: 2.5;
+            padding-bottom: 30px;
+            border-bottom: solid;
+        }
+
+        .content p {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .content label {
+            background-color: #fff;
+            color: rgb(147, 29, 226);
+            font-weight: bold;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            top: 40px;
+            right: 50px;
+        }
+
+        .container input:checked~.content {
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="click">
+            <img src="image.jpg">
+        </label>
+        <input type="checkbox" id="click">
+        <div class="content">
+            <h1>This is heading 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in doloremque, dolores totam qui
+                cumque commodi. Fugit ut dignissimos quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi soluta recusandae tenetur eius eos,
+                placeat illo voluptatum maxime, nemo rem nihil dolor laboriosam magni nisi commodi beatae at esse
+                aliquam?</p>
+            <label for="click">Close</label>
+        </div>
+    </div>
+</body>
+
+</html>

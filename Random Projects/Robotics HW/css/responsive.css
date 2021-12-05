@@ -1,0 +1,19 @@
+.container {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left .top,
+.right {
+    width: 93vw;
+    margin-bottom: 10px;
+}
+
+.left, .right {
+    margin-bottom: 50px;
+    height: unset;
+}
+
+.right {
+    padding-bottom: 40px;
+}

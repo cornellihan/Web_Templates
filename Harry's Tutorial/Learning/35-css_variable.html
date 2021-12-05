@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --blueColor: blue;
+            --whiteColor: white;
+        }
+        .container{
+            height: 900px;
+            background-color: var(--blueColor);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            padding: 15px;
+            color: var(--whiteColor);
+            align-items: center;
+            margin: 10px;
+            border: 8px solid var(--whiteColor);
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><h2>Hey wassup baybyh, this is me Mushfiq</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, omnis laboriosam maiores quae quidem vel inventore neque minima, voluptatum vero quis nesciunt distinctio deserunt libero, expedita aspernatur illum dolores repellendus.</p></div>
+        <div class="box"><h2>My inventions</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid provident ea ex deleniti quis dicta exercitationem, quidem eveniet corrupti totam nostrum repellat praesentium. Magnam, voluptas?</p></div>
+        <div class="box"><h2>My future plan</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla blanditiis cupiditate quia incidunt laudantium distinctio, provident, ab, consequatur cum dolorum. Nemo voluptatum reiciendis necessitatibus ab, quidem esse, dolor asperiores similique quae sapiente voluptates ipsa dicta placeat non iste vero?</p></div>
+    </div>
+</body>
+</html>

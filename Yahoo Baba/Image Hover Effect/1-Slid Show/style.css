@@ -1,0 +1,40 @@
+.container {
+    /* border: solid; */
+    width: 1000px;
+    overflow: hidden;
+    margin: 50px auto;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: arial;
+    text-align: center;
+    padding: 70px 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    padding-bottom: 30px;
+    border-bottom: solid;
+}
+
+.content p {
+    font-size: 25px;
+}
+
+.container:hover .content {
+    top: 0%;
+}

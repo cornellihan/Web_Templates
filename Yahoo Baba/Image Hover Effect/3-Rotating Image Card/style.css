@@ -1,0 +1,45 @@
+.container {
+    margin: 200px auto;
+    width: 500px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.container img {
+    border-radius: 50%;
+    height: 500px;
+    transform-origin: 95% 50%;
+    transition: 0.4s;
+    z-index: 1;
+    position: relative;
+}
+
+.container .pic::after {
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 93%;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 10;
+}
+
+.container img:hover {
+    transform: rotate(-180deg);
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 50%;
+    font-family: arial;
+    color: #fff;
+    background-color: #001;
+    text-align: center;
+    padding: 150px 20px;
+    box-sizing: border-box;
+}
